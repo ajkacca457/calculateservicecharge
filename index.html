@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Tip calculator</title>
+  <link rel="stylesheet" href="tipcalc.css">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/5b1eeceadd.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div class="container">
+
+<h1>Tip Calculator</h1>
+
+
+<div class="errormsg">
+<ul> please make sure:
+  <li>you entered the right amount</li>
+  <li>you specified number of person</li>
+  <li>you selected bill percent</li>
+</ul>
+
+</div>
+
+<div class="formcont">
+
+<div class="item">
+<i class="fas fa-money-check-alt"></i>
+<input type="number" class="input" id="money" placeholder="enter your total bill">
+</div>
+
+<div class="item">
+<i class="fas fa-user-friends"></i>
+<input type="number" class="input" id="person" placeholder="enter how many members are you">
+</div>
+
+<div class="item">
+<i class="fas fa-percent"></i>
+<select id="percent">
+  <option value=10>10% service charge</option>
+  <option value=5>5% service charge</option>
+  <option value=15>15% service charge</option>
+  <option value=20 selected>20% service charge</option>
+</select>
+</div>
+
+</div>
+
+<button class="btn">Calculate</button>
+
+<div class="result">
+<h3 id="tbill"></h3>
+<h3 id="pershare"></h3>
+<h3 id="tamount"></h3>
+</div>
+
+
+</div>
+
+
+<script type="text/javascript" src="tipcalc.js"></script>
+</body>
+</html>
